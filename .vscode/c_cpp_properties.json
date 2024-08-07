@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/include/c++/13",
+                "/usr/lib/x86_64-linux-gnu/openmpi/include",
+                "${workspaceFolder}/**"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "defines": [],
+            "cppStandard": "c++11"
+        }
+    ],
+    "version": 4
+}
