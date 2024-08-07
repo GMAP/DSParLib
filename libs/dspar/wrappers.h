@@ -48,7 +48,7 @@ namespace dspar
 	template <typename TIn>
 	class WrapperInputPolicy<TIn, false> {
 	public:
-		void Process(Nothing &data) { }; //You can implement Process(Nothing& nothing) without override... but why would you?
+		void Process(Nothing &data) { };
 		void OnFirstItem(Nothing &data) { };
 	 };
 	
@@ -90,7 +90,6 @@ namespace dspar
 	};
 	
 	template<> class WrapperNeedsProducePolicy<false, false> { //if the Wrapper has no input and output, this is completely invalid usage. 
-															 //Let the compilation explode elsewhere by not having the Produce method
 	//	virtual void Produce() { };
 	};
 

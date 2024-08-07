@@ -35,8 +35,6 @@ void MeasureTime(F function, int parallelism, int rank, I *throughput)
     if (dspar::globals::isCollector)
     {
 #ifdef DSPARTIMINGS
-        //I'm very sorry for this
-
         std::sort(dspar::globals::collectorTimings.begin(), dspar::globals::collectorTimings.end(), [](dspar::Timings &t1, dspar::Timings &t2) {
             return t1.totalTime < t2.totalTime;
         });

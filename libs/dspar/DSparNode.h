@@ -391,17 +391,14 @@ namespace dspar
 		{
 			TRACE();
 			//std::cout << "Unordered: "<<orderedMessages.size()<<std::endl;
-			//Can I process this message right now?
 			if (msg.id <= this->currentMessage)
 			{
 				{
 					TRBLOCK("Collector unordered: Processing data");
-					//	std::cout << "Processing ID " << msg.id << std::endl;
 					ProcessInput(data, msg);
 				}
 
 				this->currentMessage++;
-				//right. Can we process more?
 
 				while (true)
 				{
@@ -434,7 +431,6 @@ namespace dspar
 			}
 			else
 			{
-				//ok then add it to the map. we'll get them next time
 				MessageToReorder<StageInput> msgReorder(msg, data);
 				orderedMessages.push(msgReorder);
 			}
