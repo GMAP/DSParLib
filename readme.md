@@ -4,14 +4,32 @@ This is a library for research on distributed stream parallelism in HPC.
 <br>It uses MPI for communication between nodes in the network.
 
 Features:
-
- - Pipeline nodes
+ - Pipeline and Farm pattern
  - Dynamic MPI process spawning
- - Farm pattern
  - Stream stopping
  - Standalone stages
  - Pipeline composition with farms and stages
  - Abstractions for data serializing, allowing low-level MPI serialization (including definition of data types) and a higher-level send/receive API (MPI-like, but with C++ metaprogramming to make it easier)
+
+# How to cite this work
+Löff, J.; Hoffmann, R. B.; Pieper, R.; Griebler, D.; Fernandes, L. G. **“DSParLib: A C++ Template Library for Distributed Stream Parallelism”**, *International Journal of Parallel Programming*, vol. 50–5, 2022, pp. 454–485. [[PDF]](https://doi.org/10.1007/s10766-022-00737-2)
+
+## BibTeX
+```
+@article{LOFF:IJPP:22,
+	title={{DSParLib: A C++ Template Library for Distributed Stream Parallelism}},
+	author={Júnior Löff and Renato Barreto Hoffmann and Ricardo Pieper and Dalvan Griebler and Luiz Gustavo Fernandes},
+	journal={International Journal of Parallel Programming},
+	volume={50},
+	number={5},
+	pages={454-485},
+	year={2022},
+	manth={October},
+	publisher={Springer},
+	doi={10.1007/s10766-022-00737-2},
+	url={https://doi.org/10.1007/s10766-022-00737-2}
+}
+```
 
 # Dependencies
 
