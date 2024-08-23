@@ -31,6 +31,10 @@ libs/bzip2*
 *.exe
 *.app
 *.out
+output/
+
+# Workloads
+workloads/
 
 # vscode settings
 .vscode/settings.json
